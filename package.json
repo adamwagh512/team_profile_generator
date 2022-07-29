@@ -7,7 +7,9 @@
     "lib": "lib",
     "test": "tests"
   },
+ 
   "scripts": {
+    "start": "node --experimental-modules --experimental-json-modules server.mjs",
     "test": "jest"
   },
   "repository": {
@@ -22,7 +24,8 @@
   },
   "homepage": "https://github.com/adamwagh512/team_profile_generator#readme",
   "dependencies": {
-    "inquirer": "^9.0.2",
-    "jest": "^28.1.3"
+    "inquirer": "^6.5.0",
+    "jest": "^28.1.3",
+    "node-fetch": "^2.6.1"
   }
 }

@@ -1,0 +1,36 @@
+body {
+    background-color: #5EE0D6;
+}
+
+#manager-card .roleHeader {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#engineer-card .roleHeader {
+    background-color: silver;
+    color: black;
+    text-align: center;
+}
+
+#intern-card .roleHeader {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+#top-banner {
+    background-color: navy;
+    color:white;
+    text-align: center;
+}
+
+#card-holder {
+    background-color:#74F7C7 ;
+}
+
+footer {
+    text-align: center;
+    background-color: #74F7C7;
+}
