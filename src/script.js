@@ -1,7 +1,9 @@
-const fs = require('fs')
-function writeHTML (roster) {
-    console.log(roster)
-fs.writeFileSync("teamRoster.html", `<!DOCTYPE html>
+const fs = require("fs");
+function writeHTML(roster) {
+  console.log(roster);
+  fs.writeFileSync(
+    "teamRoster.html",
+    `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,22 +28,18 @@ fs.writeFileSync("teamRoster.html", `<!DOCTYPE html>
 
     <!-- The following code will generate the card holder in the middle of the page -->
     <div class='columns'>
-        ${roster.map(
-            function (element) {
-                switch(element.getRole()) {
-                case 'Engineer':
-                return engineerCard(element);
-                
-                case 'Intern':
-                return internCard(element)
+        ${roster.map(function (element) {
+          switch (element.getRole()) {
+            case "Engineer":
+              return engineerCard(element);
 
-                default:
-                return managerCard(element)
+            case "Intern":
+              return internCard(element);
 
-                }
-            
-            }
-        )}
+            default:
+              return managerCard(element);
+          }
+        })}
         
     </div>
 
@@ -54,11 +52,12 @@ fs.writeFileSync("teamRoster.html", `<!DOCTYPE html>
 
     
 </body>
-</html>`)
+</html>`
+  );
 }
 
-function engineerCard (engineer) {
-    return `<div id="engineer-card" class="column">
+function engineerCard(engineer) {
+  return `<div id="engineer-card" class="column">
     <div class="card">
         <div class="roleHeader">
             <i class="fa-solid fa-gears"> Engineer</i>
@@ -72,12 +71,11 @@ function engineerCard (engineer) {
             </div>
         </div>
     </div>
-</div>`
-
+</div>`;
 }
 
-function internCard (intern) {
-    return `<div id="intern-card" class="column">
+function internCard(intern) {
+  return `<div id="intern-card" class="column">
     <div class="card">
         <div class="roleHeader">
         <i class="fa-solid fa-book-open"> Intern </i>
@@ -91,11 +89,11 @@ function internCard (intern) {
             </div>
         </div>
     </div>
-</div>`
+</div>`;
 }
 
-function managerCard (manager) {
-    return `<div id="manager-card" class="column">
+function managerCard(manager) {
+  return `<div id="manager-card" class="column">
     <div class="card">
         <div class="roleHeader">
         <i class="fa-solid fa-user-tie"> Manager</i>
@@ -109,8 +107,7 @@ function managerCard (manager) {
             </div>
         </div>
     </div>
-</div>`
+</div>`;
 }
 
-
-module.exports = {writeHTML}
+module.exports = { writeHTML };
