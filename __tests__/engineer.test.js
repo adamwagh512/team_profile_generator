@@ -1,4 +1,3 @@
-const Employee = require('../lib/Employee')
 const Engineer = require('../lib/engineer')
 const engineer = new Engineer ('Adam', '001', 'adam@me.com', 'adamwagh512')
 

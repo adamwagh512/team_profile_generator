@@ -1,7 +1,7 @@
 body {
     background-color: #5EE0D6;
 }
-
+/* Styling for every card class */
 #manager-card .roleHeader {
     background-color: blue;
     color: white;
@@ -19,17 +19,17 @@ body {
     color: white;
     text-align: center;
 }
-
+/* Styling for the top banner of the page */
 #top-banner {
     background-color: navy;
     color:white;
     text-align: center;
 }
-
+/* background color for card holder */
 #card-holder {
     background-color:#74F7C7 ;
 }
-
+/* background color for footer element */
 footer {
     text-align: center;
     background-color: #74F7C7;

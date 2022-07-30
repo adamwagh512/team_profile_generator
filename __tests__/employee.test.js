@@ -44,12 +44,3 @@ describe('getRole()', () => {
         expect(employee.getRole()).toEqual('Employee')
     })
 })
-// test('This is a properties test',() =>{
-//     const name = 'adam'
-//     const id = '001'
-//     const email = 'adam@me.com'
-//     const employee = new Employee(name, id, email)
-//     expect(employee.name).toBe('adam')
-//     expect(employee.id).toBe('001')
-//     expect(employee.email).toBe('adam@me.com')
-// })
